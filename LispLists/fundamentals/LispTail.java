@@ -12,7 +12,7 @@ class LispTail {
 		System.out.println(lsTail); // [7,3,11]
 
 		// what is the head of the tail of a list?
-		//Integer h = lsTail.head();
-		//System.out.println(h);
+		Integer h = lsTail.head();
+		System.out.println(h);
 	}
 }
