@@ -13,6 +13,6 @@ class LispTail {
 
 		// what is the head of the tail of a list?
 		Integer h = lsTail.head();
-		System.out.println(h);
+		System.out.println(h); // Error: Object cannot be converted to Integer
 	}
 }
