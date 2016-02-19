@@ -8,7 +8,7 @@ public class Vertex {
 
     private int data;
     private boolean visited;
-    private List<Vertex> neighbourList
+    private List<Vertex> neighbourList;
 
     public Vertex(int data) {
         this.data = data;
