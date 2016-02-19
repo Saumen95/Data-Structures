@@ -43,4 +43,11 @@ public class Vertex {
         this.neighbourList.add(vertex);
 
     }
+
+    @Override
+    public String toString() {
+        return "Vertex{" +
+                "" + data +
+                '}';
+    }
 }
