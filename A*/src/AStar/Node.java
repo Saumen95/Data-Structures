@@ -92,4 +92,13 @@ public class Node implements Comparable<Node> {
     public void setY(double y) {
         this.y = y;
     }
+
+    public void setParentNode(Node parentNode) {
+        this.parentNode = parentNode;
+    }
+
+    public List<Edge> getAdjacenciesList() {
+
+        return adjacenciesList;
+    }
 }
