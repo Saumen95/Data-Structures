@@ -35,6 +35,10 @@ public class Node implements Comparable<Node> {
 
     }
 
+    public void addNeighbour(Edge edge) {
+        this.adjacenciesList.add(edge);
+    }
+
     @Override
     public String toString() {
         return this.value;
