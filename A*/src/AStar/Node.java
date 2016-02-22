@@ -101,4 +101,8 @@ public class Node implements Comparable<Node> {
 
         return adjacenciesList;
     }
+
+    public Node getParentNode() {
+        return parentNode;
+    }
 }

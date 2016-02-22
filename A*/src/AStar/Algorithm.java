@@ -2,9 +2,7 @@ package AStar;
 
 import com.sun.tools.internal.xjc.reader.gbind.SourceNode;
 
-import java.util.HashSet;
-import java.util.PriorityQueue;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by sameenislam on 22/02/2016.
@@ -52,6 +50,18 @@ public class Algorithm {
         }
 
     }
+
+    public List<Node> printPath(Node targetNode) {
+        List<Node> pathList = new ArrayList<>();
+
+        for(Node node = targetNode; node != null; node=node.getParentNode()) {
+            pathList.add(node);
+        }
+
+        Collections.reverse(pathList);
+        return pathList;
+    }
+
 
     // Manhattan heuristic. Different to Euclidean distance.
     private double heuristic(Node node1, Node node2) {
